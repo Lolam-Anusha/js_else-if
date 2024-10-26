@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question-2</h1>
+    <script>
+        const weight = prompt("Enter the weight:");
+        const destination = prompt("enter the destination:");
+        if (weight<=1){
+            if(destination == "local"){
+                shipping_cost = "$5";
+                console.log(shipping_cost);
+            }
+            else if(destination == "national"){
+                shipping_cost = "$8";
+                console.log(shipping_cost);
+            }
+            else{
+                shipping_cost = "$15";
+                console.log(shipping_cost);
+            }
+        }
+        else if (weight>1 && weight<=5){
+            if(destination == "local"){
+                shipping_cost = "$10";
+                console.log(shipping_cost);
+            }
+            else if(destination == "national"){
+                shipping_cost = "$15";
+                console.log(shipping_cost);
+            }
+            else{
+                shipping_cost = "$30";
+                console.log(shipping_cost);
+            }
+        }
+        else if (weight>5 && weight<=10){
+            if(destination == "local"){
+                shipping_cost = "$20";
+                console.log(shipping_cost);
+            }
+            else if(destination == "national"){
+                shipping_cost = "$25";
+                console.log(shipping_cost);
+            }
+            else{
+                shipping_cost = "$50";
+                console.log(shipping_cost);
+            }
+        }
+        else{
+            if(destination == "local"){
+                shipping_cost = "$30";
+                console.log(shipping_cost);
+            }
+            else if(destination == "national"){
+                shipping_cost = "$35";
+                console.log(shipping_cost);
+            }
+            else{
+                shipping_cost = "$70";
+                console.log(shipping_cost);
+            }
+        }
+    </script>
+</body>
+</html>

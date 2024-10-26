@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Question-3</h1>
+   <script>
+    const units = prompt("enter the number of units:");
+    if (units<=100){
+        electricity_bill = 1*100;
+        console.log(`$${electricity_bill}`);
+    }
+    else if(units>100 && units<=300){
+        electricity_bill = (1*100)+((units-100)*1.5);
+        console.log(`$${electricity_bill}`)
+        // bill amount=100*1+units-100*1.5
+    }
+    else{
+        electricity_bill = (1*100)+(200*1.5)+((units-300)*2);
+        console.log(`$${electricity_bill}`)
+    }
+   </script>
+</body>
+</html>
