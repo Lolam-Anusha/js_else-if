@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question-1</h1>
+    <script>
+        const income = prompt("enter the income:");
+        if (income<=250000){
+            console.log("No tax");
+        }
+        else if (income>250000 && income<=500000){
+            tax = (income-250000)*0.05;
+            console.log(tax);
+        }
+        else if (income>500000 && income<=1000000){
+            tax = 12500 + 0.2 * (income-500000);
+            console.log(tax);
+        }
+        else{
+            tax = 112500 + 0.3 * (income-1000000);
+            console.log(tax);
+        }
+    </script>
+</body>
+</html>
